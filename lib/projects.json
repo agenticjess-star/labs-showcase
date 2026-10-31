@@ -1,0 +1,372 @@
+[
+  {
+    "name": "ListenLifeV2",
+    "slug": "listenlifev2",
+    "description": "Music listening dashboard from Spotify history. Drop in JSONs, see years, genres, behaviour.",
+    "language": "TypeScript",
+    "status": "Live",
+    "github_url": "https://github.com/agenticjess-star/ListenLifeV2",
+    "live_url": "https://soundofdata.vercel.app",
+    "image_url": "/images/media-generation-listenlife-hero-0-065afd2c-d9bc-4c89-ae1f-4cadcd60c616.webp"
+  },
+  {
+    "name": "bright-mind-os",
+    "slug": "bright-mind-os",
+    "description": "Repo content is Alpha Gemini \u2014 Polymarket Up/Down decision aid. Confirm end version in batch.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/bright-mind-os",
+    "live_url": null,
+    "image_url": "/images/media-generation-bright-mind-hero-0-faa3f7a0-b4ae-4729-89f8-6635dfbf2f6f.webp"
+  },
+  {
+    "name": "insight-engine",
+    "slug": "insight-engine",
+    "description": "Private repo. Live check pending.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/insight-engine",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "GenJess-OS",
+    "slug": "genjess-os",
+    "description": "Production agent OS for GenJess agency. 7-agent Outbound Studio + Deploy Pipeline + AxonAI collab.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/GenJess-OS",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "improved-ui-design-skills",
+    "slug": "improved-ui-design-skills",
+    "description": "Canonical premium UI/Design agent skills collection. Install with npx skills add.",
+    "language": "\u2014",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/improved-ui-design-skills",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "instruction-hub",
+    "slug": "instruction-hub",
+    "description": "Instruction hub. Live check pending.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/instruction-hub",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "outbound-studio-phase1",
+    "slug": "outbound-studio-phase1",
+    "description": "Phase 1 docs and static HTML demos for Outbound Studio.",
+    "language": "HTML",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/outbound-studio-phase1",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "localcheck",
+    "slug": "localcheck",
+    "description": "LocalCheck courts list + app. Do not touch backend/connections without explicit go-ahead.",
+    "language": "TypeScript",
+    "status": "Live",
+    "github_url": "https://github.com/agenticjess-star/localcheck",
+    "live_url": "https://localchecksports.com",
+    "image_url": "/images/media-generation-localcheck-hero-0-0d359206-2cbf-4f40-8e39-5a135cab29bb.webp"
+  },
+  {
+    "name": "ai-magic-studio",
+    "slug": "ai-magic-studio",
+    "description": "Premium AI Magic Studio PWA \u2014 React 19 + Tailwind + Framer Motion, prompt generation, multi-model.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/ai-magic-studio",
+    "live_url": null,
+    "image_url": "/images/media-generation-ai-magic-studio-hero-0-8d980ac9-0d74-40b7-96ed-1de5ec821f4e.webp"
+  },
+  {
+    "name": "LocalCheck_Expo",
+    "slug": "localcheck-expo",
+    "description": "LocalCheck Expo app copy. Boundary applies.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/LocalCheck_Expo",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "LocalCheck-IOS",
+    "slug": "localcheck-ios",
+    "description": "LocalCheck iOS copy. Boundary applies.",
+    "language": "\u2014",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/LocalCheck-IOS",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "Reim-Pro",
+    "slug": "reim-pro",
+    "description": "Private, Replit-linked. Live check pending.",
+    "language": "\u2014",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/Reim-Pro",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "mya",
+    "slug": "mya",
+    "description": "Mya. Live check pending.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/mya",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "AgentAgency",
+    "slug": "agentagency",
+    "description": "Agent agency. Live check pending.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/AgentAgency",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "sms-ai",
+    "slug": "sms-ai",
+    "description": "Text back.",
+    "language": "HTML",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/sms-ai",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "kai-lennox-studio",
+    "slug": "kai-lennox-studio",
+    "description": "Premium AI-powered website studio by Kai Lennox. Next.js.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/kai-lennox-studio",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "improved-ui-design-skills-2026",
+    "slug": "improved-ui-design-skills-2026",
+    "description": "Enhanced design-foundation and design-ui-variants skills, 2026 practices.",
+    "language": "\u2014",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/improved-ui-design-skills-2026",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "OutboundStudio",
+    "slug": "outboundstudio",
+    "description": "Outbound Studio. Live check pending.",
+    "language": "HTML",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/OutboundStudio",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "phone-lookup-mcp",
+    "slug": "phone-lookup-mcp",
+    "description": "Phone lookup MCP. Live check pending.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/phone-lookup-mcp",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "DatingData",
+    "slug": "datingdata",
+    "description": "Dating data. Live check pending.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/DatingData",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "alpha-gauge",
+    "slug": "alpha-gauge",
+    "description": "Alpha Gauge. Live check pending.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/alpha-gauge",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "relational-memory-showcase",
+    "slug": "relational-memory-showcase",
+    "description": "Private. Live check pending.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/relational-memory-showcase",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "TeleTok_2026",
+    "slug": "teletok-2026",
+    "description": "TeleTok 2026. Live check pending.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/TeleTok_2026",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "HingeDatAI",
+    "slug": "hingedatai",
+    "description": "Hinge data AI. Live check pending.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/HingeDatAI",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "context-canvas",
+    "slug": "context-canvas",
+    "description": "Context Canvas. Live check pending.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/context-canvas",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "bnr-work",
+    "slug": "bnr-work",
+    "description": "BNR work. Live check pending.",
+    "language": "HTML",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/bnr-work",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "bnr-project-hub",
+    "slug": "bnr-project-hub",
+    "description": "Private BNR project hub.",
+    "language": "HTML",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/bnr-project-hub",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "bnr-seo-report",
+    "slug": "bnr-seo-report",
+    "description": "Private BNR SEO report.",
+    "language": "HTML",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/bnr-seo-report",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "desktop-tutorial",
+    "slug": "desktop-tutorial",
+    "description": "GitHub Desktop tutorial repo.",
+    "language": "\u2014",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/desktop-tutorial",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "polygo-up-or-down-live",
+    "slug": "polygo-up-or-down-live",
+    "description": "Polygo up-or-down live. Live check pending.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/polygo-up-or-down-live",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "context-weaver",
+    "slug": "context-weaver",
+    "description": "Context Weaver. Live check pending.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/context-weaver",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "OMNIVITAL-BUSINESS",
+    "slug": "omnivital-business",
+    "description": "OmniVital business. Live check pending.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/OMNIVITAL-BUSINESS",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "omnivital-pitch",
+    "slug": "omnivital-pitch",
+    "description": "OmniVital pitch.",
+    "language": "\u2014",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/omnivital-pitch",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "omniavital-v3",
+    "slug": "omniavital-v3",
+    "description": "OmniVital v3. Live check pending.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/omniavital-v3",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "polyupgrade",
+    "slug": "polyupgrade",
+    "description": "Polyupgrade. Live check pending.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/polyupgrade",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "remix-of-launchpad-flow",
+    "slug": "remix-of-launchpad-flow",
+    "description": "Remix of Launchpad Flow.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/remix-of-launchpad-flow",
+    "live_url": null,
+    "image_url": null
+  },
+  {
+    "name": "remix-of-crypto-trade-template",
+    "slug": "remix-of-crypto-trade-template",
+    "description": "Private remix of crypto trade template.",
+    "language": "TypeScript",
+    "status": "Check pending",
+    "github_url": "https://github.com/agenticjess-star/remix-of-crypto-trade-template",
+    "live_url": null,
+    "image_url": null
+  }
+]
