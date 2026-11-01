@@ -27,9 +27,6 @@ export default async function Home({ searchParams }: { searchParams?: { q?: stri
         not just a link out to GitHub. Only verified live URLs are shown as live.
       </p>
       <div className="mt-6 flex flex-wrap gap-3">
-        <Button asChild>
-          <Link href="/spotify">Spotify gate + upload demo</Link>
-        </Button>
         <Button variant="outline" asChild>
           <Link href="#all-projects">Browse all projects</Link>
         </Button>
