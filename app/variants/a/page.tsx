@@ -28,7 +28,7 @@ export default async function VariantA({ searchParams }: { searchParams?: { q?: 
           <a href="#about" style={{ color: "#ccd6f6" }}><span style={{ color: "#64ffda" }}>01.</span> About</a>
           <a href="#work" style={{ color: "#ccd6f6" }}><span style={{ color: "#64ffda" }}>02.</span> Work</a>
           <a href="#projects" style={{ color: "#ccd6f6" }}><span style={{ color: "#64ffda" }}>03.</span> Projects</a>
-          <a href="#contact" style={{ color: "#ccd6f6" }}><span style={{ color: "#64ffda" }}>04.</span> Contact</a>
+          <a href="#contact" style={{ color: "#ccd6f6" }}><span style={{ color: "#64ffda" }}>04.</span> Next</a>
         </div>
       </nav>
       <main style={{ maxWidth: 1000, margin: "0 auto", padding: "40px 24px 80px" }}>
@@ -69,9 +69,9 @@ export default async function VariantA({ searchParams }: { searchParams?: { q?: 
               <p style={{ color: "#8892b0", lineHeight: 1.6 }}>{p.description}</p>
               <p style={{ color: "#8892b0", fontFamily: "monospace", fontSize: 13 }}>{p.language} · {p.status}</p>
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-                <Button variant="outline" size="sm" asChild><Link href={`/projects/${p.slug}`}>Project page</Link></Button>
-                <Button variant="outline" size="sm" asChild><a href={p.github_url}>GitHub</a></Button>
-                {p.live_url ? <Button variant="outline" size="sm" asChild><a href={p.live_url}>Live demo</a></Button> : null}
+                <Button variant="outline" size="sm" style={{ background: "transparent", color: "#64ffda", borderColor: "#64ffda" }} asChild><Link href={`/projects/${p.slug}`}>Project page</Link></Button>
+                <Button variant="outline" size="sm" style={{ background: "transparent", color: "#64ffda", borderColor: "#64ffda" }} asChild><a href={p.github_url}>GitHub</a></Button>
+                {p.live_url ? <Button variant="outline" size="sm" style={{ background: "transparent", color: "#64ffda", borderColor: "#64ffda" }} asChild><a href={p.live_url}>Live demo</a></Button> : null}
               </div>
               <p style={{ color: "#8892b0", fontSize: 12 }}>Panel, not a screenshot — the generated concept image for this project is on its project page.</p>
             </article>
@@ -79,7 +79,7 @@ export default async function VariantA({ searchParams }: { searchParams?: { q?: 
         </section>
 
         <section id="projects" style={{ marginTop: 110 }}>
-          <h2 style={{ color: "#e6f1ff", fontSize: 28 }}><span style={{ color: "#64ffda", fontFamily: "monospace", fontSize: 20 }}>03.</span> Other Noteworthy Projects ({list.length})</h2>
+          <h2 style={{ color: "#e6f1ff", fontSize: 28 }}><span style={{ color: "#64ffda", fontFamily: "monospace", fontSize: 20 }}>03.</span> Other Noteworthy Projects (33 more)</h2>
           <form style={{ margin: "20px 0" }}>
             <Input name="q" defaultValue={searchParams?.q || ""} placeholder="Search projects…" style={{ background: "#112240", color: "#e6f1ff", borderColor: "#233554", height: 48 }} />
           </form>

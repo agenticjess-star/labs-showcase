@@ -42,7 +42,7 @@ export default async function VariantB({ searchParams }: { searchParams?: { q?: 
         </form>
         <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 28 }}>
           {["All", "Live", "Check pending"].map((cat) => (
-            <Button key={cat} variant={f === cat ? "default" : "outline"} size="sm" asChild>
+            <Button key={cat} variant={f === cat ? "default" : "outline"} size="sm" style={f === cat ? undefined : { background: "#18181b", color: "#e4e4e7", borderColor: "#52525b" }} asChild>
               <Link href={`/variants/b?f=${encodeURIComponent(cat)}`}>{cat}</Link>
             </Button>
           ))}
@@ -60,8 +60,8 @@ export default async function VariantB({ searchParams }: { searchParams?: { q?: 
                 </h2>
                 <p style={{ color: "#a1a1aa", lineHeight: 1.55, margin: "0 0 12px" }}>{p.description}</p>
                 <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 14 }}>
-                  <Badge variant="secondary">{p.language}</Badge>
-                  <Badge variant="outline">{p.status}</Badge>
+                  <Badge variant="secondary" style={{ background: "#27272a", color: "#fff", borderColor: "#52525b" }}>{p.language}</Badge>
+                  <Badge variant="outline" style={{ color: "#e4e4e7", borderColor: "#71717a" }}>{p.status}</Badge>
                 </div>
                 <div style={{ display: "flex", gap: 12, fontSize: 14 }}>
                   <Link href={`/projects/${p.slug}`} style={{ textDecoration: "underline" }}>View project</Link>
