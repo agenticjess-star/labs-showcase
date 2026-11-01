@@ -1,12 +1,14 @@
 "use client";
-// Spotify webapp passcode gate, built on the real shadcn Input OTP component
-// (components/ui/input-otp.tsx), not a hand-coded keypad.
-// Demo code is shown on the demo page itself; this component takes whatever
-// expected code the caller passes in.
+// Spotify webapp passcode gate, rebuilt so there is no double-tap zoom:
+// no tappable OTP slots and no repeated tapping on one spot. Each digit is
+// chosen on a scroll wheel (React Wheel Picker, components/wheel-picker.tsx,
+// iOS-style, drag/scroll with inertia), then Unlock checks the four wheels.
+// touch-action: manipulation on the button also blocks double-tap zoom.
 import * as React from "react";
-import { REGEXP_ONLY_DIGITS } from "input-otp";
-import { InputOTP, InputOTPGroup, InputOTPSlot } from "@/components/ui/input-otp";
+import { WheelPicker, WheelPickerWrapper } from "@/components/wheel-picker";
 import { Button } from "@/components/ui/button";
+
+const DIGITS = Array.from({ length: 10 }, (_, i) => ({ label: String(i), value: String(i) }));
 
 export function SpotifyPasscodeGate({
   expectedCode,
@@ -17,49 +19,46 @@ export function SpotifyPasscodeGate({
   title?: string;
   onUnlock: () => void;
 }) {
-  const [value, setValue] = React.useState("");
-  const [error, setError] = React.useState(false);
   const length = expectedCode.length;
+  const [digits, setDigits] = React.useState<string[]>(Array(length).fill("0"));
+  const [error, setError] = React.useState(false);
+  const code = digits.join("");
+
+  const tryUnlock = () => {
+    if (code === expectedCode) onUnlock();
+    else setError(true);
+  };
 
   return (
-    <div className="flex min-h-[420px] flex-col items-center justify-center gap-6 rounded-2xl border bg-card p-8 text-center">
+    <div
+      className="flex min-h-[420px] flex-col items-center justify-center gap-6 rounded-2xl border bg-card p-8 text-center"
+      style={{ touchAction: "manipulation" }}
+    >
       <div>
         <h2 className="text-2xl font-bold">{title}</h2>
-        <p className="mt-1 text-sm text-muted-foreground">Enter the passcode</p>
-      </div>
-      <InputOTP
-        maxLength={length}
-        pattern={REGEXP_ONLY_DIGITS}
-        value={value}
-        onChange={(v) => {
-          setValue(v);
-          setError(false);
-          if (v.length === length && v === expectedCode) onUnlock();
-        }}
-      >
-        <InputOTPGroup>
-          {Array.from({ length }, (_, i) => (
-            <InputOTPSlot key={i} index={i} />
-          ))}
-        </InputOTPGroup>
-      </InputOTP>
-      {error ? (
-        <p className="text-sm text-destructive">Wrong code</p>
-      ) : (
-        <p className="h-5 text-sm text-muted-foreground">
-          {value.length > 0 ? `${value.length} of ${length} digits entered` : ""}
+        <p className="mt-1 text-sm text-muted-foreground">
+          Scroll each wheel to your passcode — no tapping, no double-tap zoom
         </p>
+      </div>
+      <WheelPickerWrapper>
+        {digits.map((d, i) => (
+          <WheelPicker
+            key={i}
+            options={DIGITS}
+            value={d}
+            onValueChange={(v) => {
+              setDigits((prev) => prev.map((x, j) => (j === i ? String(v) : x)));
+              setError(false);
+            }}
+          />
+        ))}
+      </WheelPickerWrapper>
+      {error ? (
+        <p className="text-sm text-destructive">Wrong code — scroll the wheels and try again</p>
+      ) : (
+        <p className="h-5 text-sm text-muted-foreground">Wheels: {code.split("").join(" ")}</p>
       )}
-      <Button
-        variant="outline"
-        onClick={() => {
-          if (value === expectedCode) onUnlock();
-          else {
-            setError(true);
-            setValue("");
-          }
-        }}
-      >
+      <Button onClick={tryUnlock} style={{ touchAction: "manipulation" }}>
         Unlock
       </Button>
     </div>

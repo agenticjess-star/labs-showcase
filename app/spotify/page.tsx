@@ -6,6 +6,7 @@
 import * as React from "react";
 import { SpotifyPasscodeGate } from "@/components/listenlife/spotify-passcode-gate";
 import { SpotifyFileUpload } from "@/components/listenlife/spotify-file-upload";
+import { SpotifyAiChat } from "@/components/listenlife/spotify-ai-chat";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -20,7 +21,7 @@ export default function SpotifyDemo() {
       <h1 className="mt-2 text-4xl font-bold tracking-tight">Spotify webapp: gate + upload</h1>
       <p className="mt-2 text-muted-foreground">
         The gate and the file upload, as reusable components — not inline markup.
-        Demo passcode: <strong>1234</strong>
+        Demo passcode: <strong>1234</strong> — scroll each wheel, no tapping.
       </p>
       <div className="mt-8">
         {!unlocked ? (
@@ -39,6 +40,10 @@ export default function SpotifyDemo() {
                   visible here and stays in this browser session.
                 </p>
               ) : null}
+              <SpotifyAiChat />
+              <p className="text-sm text-muted-foreground">
+                Chat runs on Featherless AI. Add FEATHERLESS_API_KEY in Vercel project settings to turn it on; until then it says so instead of faking answers.
+              </p>
               <div>
                 <Button variant="outline" onClick={() => { setUnlocked(false); setFiles([]); }}>
                   Lock demo again
