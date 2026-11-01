@@ -74,7 +74,7 @@ export default async function VariantA({ searchParams }: { searchParams?: { q?: 
                 <Button variant="outline" size="sm" style={{ background: "transparent", color: "#64ffda", borderColor: "#64ffda" }} asChild><a href={p.github_url}>GitHub</a></Button>
                 {p.live_url ? <Button variant="outline" size="sm" style={{ background: "transparent", color: "#64ffda", borderColor: "#64ffda" }} asChild><a href={p.live_url}>Live demo</a></Button> : null}
               </div>
-              <p style={{ color: "#8892b0", fontSize: 12 }}>Panel, not a screenshot — the generated concept image for this project is on its project page.</p>
+              <p style={{ color: "#8892b0", fontSize: 12 }}>Generated concept image — not a screenshot of the live project.</p>
             </article>
           ))}
         </section>
