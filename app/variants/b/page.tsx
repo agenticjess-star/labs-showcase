@@ -19,7 +19,7 @@ export default async function VariantB({ searchParams }: { searchParams?: { q?: 
       (f === "All" || p.status === f)
   );
   return (
-    <div style={{ background: "#0b0b0f", color: "#f5f5f4", minHeight: "100vh", fontFamily: "system-ui, -apple-system, sans-serif" }}>
+    <div style={{ background: "#0b0b0f", color: "#f5f5f4", minHeight: "100vh", overflowWrap: "anywhere", wordBreak: "break-word", fontFamily: "system-ui, -apple-system, sans-serif" }}>
       <main style={{ maxWidth: 1200, margin: "0 auto", padding: "28px 20px 80px" }}>
         <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
           <Link href="/variants" style={{ fontWeight: 800, letterSpacing: "-0.02em" }}>JESSE — LABS</Link>
@@ -48,12 +48,13 @@ export default async function VariantB({ searchParams }: { searchParams?: { q?: 
           ))}
         </div>
         <p style={{ color: "#a1a1aa" }}>{list.length} projects in this view</p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 20, marginTop: 20 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px, 100%), 1fr))", gap: 20, marginTop: 20 }}>
           {list.map((p, i) => (
             <article key={p.slug} style={{ border: "1px solid #27272a", borderRadius: 16, overflow: "hidden", background: "#131316" }}>
-              <div style={{ height: 150, background: i % 3 === 0 ? "#e4571d" : i % 3 === 1 ? "#27272a" : "#3f3f46", display: "flex", alignItems: "flex-end", padding: 16 }}>
+              {p.image_url ? <img src={p.image_url} alt="" style={{ width: "100%", height: 150, objectFit: "cover", display: "block" }} /> : <div style={{ height: 150, background: i % 3 === 0 ? "#e4571d" : i % 3 === 1 ? "#27272a" : "#3f3f46", display: "flex", alignItems: "flex-end", padding: 16 }}>
                 <span style={{ fontSize: 56, fontWeight: 800, letterSpacing: "-0.04em", lineHeight: 1 }}>{String(i + 1).padStart(2, "0")}</span>
-              </div>
+              </div>}
+              <div style={{ padding: "0 18px" }}><span style={{ fontSize: 13, color: "#a1a1aa" }}>{String(i + 1).padStart(2, "0")} — {p.image_url ? "Generated concept image" : "Colour panel, not a screenshot"}</span></div>
               <div style={{ padding: 18 }}>
                 <h2 style={{ fontSize: 22, margin: "0 0 8px" }}>
                   <Link href={`/projects/${p.slug}`}>{p.name}</Link>

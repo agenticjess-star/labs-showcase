@@ -21,10 +21,10 @@ export default async function VariantA({ searchParams }: { searchParams?: { q?: 
   const featured = projects.filter((p) => p.image_url).slice(0, 4);
   const rest = projects.filter((p) => !featured.some((f) => f.slug === p.slug));
   return (
-    <div style={{ background: "#0a192f", color: "#ccd6f6", minHeight: "100vh", fontFamily: "system-ui, -apple-system, sans-serif" }}>
+    <div style={{ background: "#0a192f", color: "#ccd6f6", minHeight: "100vh", overflowWrap: "anywhere", wordBreak: "break-word", fontFamily: "system-ui, -apple-system, sans-serif" }}>
       <nav style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "20px 24px", maxWidth: 1100, margin: "0 auto" }}>
         <Link href="/variants" style={{ color: "#64ffda", fontFamily: "monospace", fontWeight: 700 }}>J — Labs</Link>
-        <div style={{ display: "flex", gap: 20, fontFamily: "monospace", fontSize: 13 }}>
+        <div style={{ display: "flex", gap: 20, flexWrap: "wrap", fontFamily: "monospace", fontSize: 13 }}>
           <a href="#about" style={{ color: "#ccd6f6" }}><span style={{ color: "#64ffda" }}>01.</span> About</a>
           <a href="#work" style={{ color: "#ccd6f6" }}><span style={{ color: "#64ffda" }}>02.</span> Work</a>
           <a href="#projects" style={{ color: "#ccd6f6" }}><span style={{ color: "#64ffda" }}>03.</span> Projects</a>
@@ -62,6 +62,7 @@ export default async function VariantA({ searchParams }: { searchParams?: { q?: 
           <h2 style={{ color: "#e6f1ff", fontSize: 28 }}><span style={{ color: "#64ffda", fontFamily: "monospace", fontSize: 20 }}>02.</span> Some Things I&apos;ve Built</h2>
           {featured.map((p, i) => (
             <article key={p.slug} style={{ display: "grid", gridTemplateColumns: "1fr", gap: 16, marginTop: 48, padding: 24, background: "#112240", borderRadius: 8 }}>
+              {p.image_url ? <img src={p.image_url} alt="" style={{ width: "100%", borderRadius: 6, display: "block" }} /> : null}
               <p style={{ color: "#64ffda", fontFamily: "monospace", fontSize: 13 }}>Featured Project</p>
               <h3 style={{ color: "#e6f1ff", fontSize: 26, margin: 0 }}>
                 <Link href={`/projects/${p.slug}`}>{p.name}</Link>
@@ -83,22 +84,19 @@ export default async function VariantA({ searchParams }: { searchParams?: { q?: 
           <form style={{ margin: "20px 0" }}>
             <Input name="q" defaultValue={searchParams?.q || ""} placeholder="Search projects…" style={{ background: "#112240", color: "#e6f1ff", borderColor: "#233554", height: 48 }} />
           </form>
-          <table style={{ width: "100%", borderCollapse: "collapse", color: "#8892b0", fontSize: 15 }}>
-            <thead><tr style={{ textAlign: "left", color: "#e6f1ff" }}><th style={{ padding: "10px 8px" }}>Project</th><th style={{ padding: "10px 8px" }}>Language</th><th style={{ padding: "10px 8px" }}>Status</th><th style={{ padding: "10px 8px" }}>Links</th></tr></thead>
-            <tbody>
+          <div>
               {list.filter((p) => !featured.some((f) => f.slug === p.slug)).map((p) => (
-                <tr key={p.slug} style={{ borderTop: "1px solid #233554" }}>
-                  <td style={{ padding: "12px 8px" }}><Link href={`/projects/${p.slug}`} style={{ color: "#e6f1ff", fontWeight: 600 }}>{p.name}</Link></td>
-                  <td style={{ padding: "12px 8px" }}>{p.language}</td>
-                  <td style={{ padding: "12px 8px" }}>{p.status}</td>
-                  <td style={{ padding: "12px 8px" }}>
+                <div key={p.slug} style={{ borderTop: "1px solid #233554", padding: "14px 0", display: "flex", flexWrap: "wrap", gap: "4px 16px", alignItems: "baseline" }}>
+                  <Link href={`/projects/${p.slug}`} style={{ color: "#e6f1ff", fontWeight: 600, flex: "1 1 220px", minWidth: 0 }}>{p.name}</Link>
+                  <span style={{ flex: "0 0 auto" }}>{p.language}</span>
+                  <span style={{ flex: "0 0 auto" }}>{p.status}</span>
+                  <span style={{ flex: "0 0 auto" }}>
                     <a href={p.github_url} style={{ color: "#64ffda", marginRight: 12 }}>GitHub</a>
-                    {p.live_url ? <a href={p.live_url} style={{ color: "#64ffda" }}>Live</a> : <span>—</span>}
-                  </td>
-                </tr>
+                    {p.live_url ? <a href={p.live_url} style={{ color: "#64ffda" }}>Live</a> : null}
+                  </span>
+                </div>
               ))}
-            </tbody>
-          </table>
+            </div>
           <p style={{ color: "#8892b0", fontSize: 13, marginTop: 16 }}>Featured rows above ({featured.length}) plus archive rows ({rest.length}) = {projects.length} projects, all filled in.</p>
         </section>
 

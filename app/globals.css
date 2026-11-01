@@ -1,4 +1,7 @@
 @tailwind base;
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: hidden; max-width: 100%; }
+img, video { max-width: 100%; height: auto; }
 @tailwind components;
 @tailwind utilities;
 @layer base {

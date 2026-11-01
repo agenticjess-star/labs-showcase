@@ -16,7 +16,7 @@ export default async function VariantC({ searchParams }: { searchParams?: { q?: 
     (p) => !q || p.name.toLowerCase().includes(q) || p.description.toLowerCase().includes(q)
   );
   return (
-    <div style={{ background: "#f4f1ea", color: "#111", minHeight: "100vh", fontFamily: "system-ui, -apple-system, sans-serif" }}>
+    <div style={{ background: "#f4f1ea", color: "#111", minHeight: "100vh", overflowWrap: "anywhere", wordBreak: "break-word", fontFamily: "system-ui, -apple-system, sans-serif" }}>
       <main style={{ maxWidth: 1100, margin: "0 auto", padding: "24px 20px 80px" }}>
         <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "2px solid #111", paddingBottom: 16, flexWrap: "wrap", gap: 12 }}>
           <Link href="/variants" style={{ fontWeight: 900, textTransform: "uppercase", letterSpacing: "0.02em" }}>Jesse / Labs</Link>
@@ -39,7 +39,7 @@ export default async function VariantC({ searchParams }: { searchParams?: { q?: 
         </form>
         <div style={{ borderTop: "2px solid #111" }}>
           {list.map((p, i) => (
-            <article key={p.slug} style={{ display: "grid", gridTemplateColumns: "64px 1fr", gap: 16, borderBottom: "2px solid #111", padding: "22px 0" }}>
+            <article key={p.slug} style={{ display: "grid", gridTemplateColumns: "56px minmax(0, 1fr)", gap: 16, borderBottom: "2px solid #111", padding: "22px 0" }}>
               <span style={{ fontSize: 28, fontWeight: 900 }}>{String(i + 1).padStart(2, "0")}</span>
               <div>
                 <h2 style={{ fontSize: 30, textTransform: "uppercase", letterSpacing: "-0.01em", margin: "0 0 6px" }}>
