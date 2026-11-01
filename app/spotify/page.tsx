@@ -8,6 +8,7 @@ import { SpotifyPasscodeGate } from "@/components/listenlife/spotify-passcode-ga
 import { SpotifyFileUpload } from "@/components/listenlife/spotify-file-upload";
 import { SpotifyAiChat } from "@/components/listenlife/spotify-ai-chat";
 import { SpotifyDataView, parseHistory, type ParsedHistory } from "@/components/listenlife/spotify-data-view";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -26,6 +27,11 @@ export default function SpotifyDemo() {
     <main className="mx-auto max-w-2xl px-5 py-10">
       <p className="text-sm text-muted-foreground">LABS — COMPONENT DEMO</p>
       <h1 className="mt-2 text-4xl font-bold tracking-tight">Spotify webapp: gate + upload</h1>
+      <p className="mt-4">
+        <Link href="/" className="text-sm font-medium underline underline-offset-4">
+          ← Back to hub
+        </Link>
+      </p>
       <p className="mt-2 text-muted-foreground">
         The gate and the file upload, as reusable components — not inline markup.
         Demo passcode: <strong>1234</strong> — simple keypad. This demo is not ListenLife itself; the real ListenLife is the dark original, linked from the showcase project page.
