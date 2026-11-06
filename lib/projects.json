@@ -12,7 +12,7 @@
   {
     "name": "bright-mind-os",
     "slug": "bright-mind-os",
-    "description": "Repo content is Alpha Gemini \u2014 Polymarket Up/Down decision aid. Confirm end version in batch.",
+    "description": "Repo content is Alpha Gemini — Polymarket Up/Down decision aid. Confirm end version in batch.",
     "language": "TypeScript",
     "status": "Check pending",
     "github_url": "https://github.com/agenticjess-star/bright-mind-os",
@@ -27,7 +27,7 @@
     "status": "Check pending",
     "github_url": "https://github.com/agenticjess-star/insight-engine",
     "live_url": null,
-    "image_url": null
+    "image_url": "/images/media-generation-insight-engine-hero.webp"
   },
   {
     "name": "GenJess-OS",
@@ -37,17 +37,17 @@
     "status": "Check pending",
     "github_url": "https://github.com/agenticjess-star/GenJess-OS",
     "live_url": null,
-    "image_url": null
+    "image_url": "/images/media-generation-genjess-os-hero.webp"
   },
   {
     "name": "improved-ui-design-skills",
     "slug": "improved-ui-design-skills",
     "description": "Canonical premium UI/Design agent skills collection. Install with npx skills add.",
-    "language": "\u2014",
+    "language": "—",
     "status": "Check pending",
     "github_url": "https://github.com/agenticjess-star/improved-ui-design-skills",
     "live_url": null,
-    "image_url": null
+    "image_url": "/images/media-generation-improved-ui-design-skills-hero.webp"
   },
   {
     "name": "instruction-hub",
@@ -57,7 +57,7 @@
     "status": "Check pending",
     "github_url": "https://github.com/agenticjess-star/instruction-hub",
     "live_url": null,
-    "image_url": null
+    "image_url": "/images/media-generation-instruction-hub-hero.webp"
   },
   {
     "name": "outbound-studio-phase1",
@@ -67,7 +67,7 @@
     "status": "Check pending",
     "github_url": "https://github.com/agenticjess-star/outbound-studio-phase1",
     "live_url": null,
-    "image_url": null
+    "image_url": "/images/media-generation-outbound-studio-phase1-hero.webp"
   },
   {
     "name": "localcheck",
@@ -82,7 +82,7 @@
   {
     "name": "ai-magic-studio",
     "slug": "ai-magic-studio",
-    "description": "Premium AI Magic Studio PWA \u2014 React 19 + Tailwind + Framer Motion, prompt generation, multi-model.",
+    "description": "Premium AI Magic Studio PWA — React 19 + Tailwind + Framer Motion, prompt generation, multi-model.",
     "language": "TypeScript",
     "status": "Check pending",
     "github_url": "https://github.com/agenticjess-star/ai-magic-studio",
@@ -97,27 +97,27 @@
     "status": "Check pending",
     "github_url": "https://github.com/agenticjess-star/LocalCheck_Expo",
     "live_url": null,
-    "image_url": null
+    "image_url": "/images/media-generation-localcheck-expo-hero.webp"
   },
   {
     "name": "LocalCheck-IOS",
     "slug": "localcheck-ios",
     "description": "LocalCheck iOS copy. Boundary applies.",
-    "language": "\u2014",
+    "language": "—",
     "status": "Check pending",
     "github_url": "https://github.com/agenticjess-star/LocalCheck-IOS",
     "live_url": null,
-    "image_url": null
+    "image_url": "/images/media-generation-localcheck-ios-hero.webp"
   },
   {
     "name": "Reim-Pro",
     "slug": "reim-pro",
     "description": "Private, Replit-linked. Live check pending.",
-    "language": "\u2014",
+    "language": "—",
     "status": "Check pending",
     "github_url": "https://github.com/agenticjess-star/Reim-Pro",
     "live_url": null,
-    "image_url": null
+    "image_url": "/images/media-generation-reim-pro-hero.webp"
   },
   {
     "name": "mya",
@@ -127,7 +127,7 @@
     "status": "Check pending",
     "github_url": "https://github.com/agenticjess-star/mya",
     "live_url": null,
-    "image_url": null
+    "image_url": "/images/media-generation-mya-hero.webp"
   },
   {
     "name": "AgentAgency",
@@ -137,7 +137,7 @@
     "status": "Check pending",
     "github_url": "https://github.com/agenticjess-star/AgentAgency",
     "live_url": null,
-    "image_url": null
+    "image_url": "/images/media-generation-agentagency-hero.webp"
   },
   {
     "name": "sms-ai",
@@ -163,7 +163,7 @@
     "name": "improved-ui-design-skills-2026",
     "slug": "improved-ui-design-skills-2026",
     "description": "Enhanced design-foundation and design-ui-variants skills, 2026 practices.",
-    "language": "\u2014",
+    "language": "—",
     "status": "Check pending",
     "github_url": "https://github.com/agenticjess-star/improved-ui-design-skills-2026",
     "live_url": null,
@@ -283,7 +283,7 @@
     "name": "desktop-tutorial",
     "slug": "desktop-tutorial",
     "description": "GitHub Desktop tutorial repo.",
-    "language": "\u2014",
+    "language": "—",
     "status": "Check pending",
     "github_url": "https://github.com/agenticjess-star/desktop-tutorial",
     "live_url": null,
@@ -323,7 +323,7 @@
     "name": "omnivital-pitch",
     "slug": "omnivital-pitch",
     "description": "OmniVital pitch.",
-    "language": "\u2014",
+    "language": "—",
     "status": "Check pending",
     "github_url": "https://github.com/agenticjess-star/omnivital-pitch",
     "live_url": null,
